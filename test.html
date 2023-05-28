@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Your Website Content</h1>
+  
+  <div id="floating-prompt">Successful</div>
+  <a href="#" id="success-link">Click me</a>
+
+
+  <style>
+    #floating-prompt {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  display: none; /* Initially hidden */
+  transition: 1.2s;
+}
+
+  </style>
+
+  <script >
+    // Wait for the DOM to load
+    document.addEventListener('DOMContentLoaded', function() {
+  var prompt = document.getElementById('floating-prompt');
+  var link = document.getElementById('success-link');
+
+  // Show the prompt
+  function showPrompt() {
+    prompt.style.display = 'block';
+  }
+
+  // Hide the prompt after 3 seconds
+  function hidePrompt() {
+    prompt.style.display = 'none';
+  }
+
+  // Add click event listener to the link
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    showPrompt();
+    setTimeout(hidePrompt, 3000);
+  });
+});
+  </script>
+</body>
+</html>

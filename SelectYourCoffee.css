@@ -1,0 +1,61 @@
+body {
+    background-color: #8a5504;
+    margin: 0;
+    padding: 20px;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Great Vibes';
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.coffee-list {
+    max-width: 1300px;
+    padding: 20px 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.coffee-list li {
+    margin-bottom: 10px;
+}
+
+.coffee-names {
+    display: inline-block;
+    padding: 90px 20px;
+    width: 10%;
+    color: #000000;
+    font-family: 'Raleway' ,sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.coffee-names:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000;
+}
+
+.box-description {
+    font-size: 16px;
+}
