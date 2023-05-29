@@ -1,5 +1,6 @@
 body {
-    background-color: #8a5504;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(coffee.jpg);
+    background-size: cover;
     margin: 0;
     padding: 20px;
     animation: fade-in 1s ease-in-out forwards;
@@ -31,31 +32,44 @@ h2 {
     align-items: center;
     justify-content: space-between;
 }
-.coffee-list li {
-    margin-bottom: 10px;
-}
+
 
 .coffee-names {
     display: inline-block;
-    padding: 90px 20px;
-    width: 10%;
-    color: #000000;
+    width: 15vw;
+    height: 45vh;
+    color: #fff;
     font-family: 'Raleway' ,sans-serif;
     font-size: 18px;
     border-radius: 10px;
     border: 2px solid #ffffff;
-    text-align: center;
     text-decoration: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    box-sizing: border-box;
+    padding: 130px 20px;
+    text-align: center;
+    position: relative;
 }
 
 .coffee-names:hover {
-    transform: scale(1.1);
-    background-color: #fff;
-    color: #000;
+  transform: scale(1.1);
+  background-color: #fff;
+  padding: 90px 20px;
+  color: #000;
 }
 
-.box-description {
-    font-size: 16px;
+
+.description{
+  display: none;
 }
+
+.coffee-names:hover .description {
+  display: block;
+  font-size: 15px;
+}
+
+.coffee-names:hover .coffee, .coffee-names:hover .price{
+  display: none;
+}
+  
