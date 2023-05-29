@@ -26,13 +26,11 @@ h2 {
 }
 
 .coffee-list {
-    max-width: 1300px;
     padding: 20px 50px;
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
-
 
 .coffee-names {
     display: inline-block;
@@ -55,10 +53,9 @@ h2 {
 .coffee-names:hover {
   transform: scale(1.1);
   background-color: #fff;
-  padding: 90px 20px;
+  padding: 70px 20px;
   color: #000;
 }
-
 
 .description{
   display: none;
@@ -71,5 +68,19 @@ h2 {
 
 .coffee-names:hover .coffee, .coffee-names:hover .price{
   display: none;
+}
+
+@media (max-width: 830px) {
+  /* Adjust the max-width value to match the desired size of a phone */
+  .coffee-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .coffee-names {
+    width: 40vw; /* Adjust the width to fit the smaller screen */
+    margin: 10px; /* Add margin between the items */
+  }
 }
   
