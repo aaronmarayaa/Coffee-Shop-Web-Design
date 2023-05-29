@@ -1,9 +1,8 @@
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(coffee.jpg);
-    background-size: cover;
-    margin: 0;
-    padding: 20px;
-    animation: fade-in 1s ease-in-out forwards;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(coffee.jpg);
+  background-size: cover;
+  margin: 0;
+  animation: fade-in 1s ease-in-out forwards;
 }
 
 @keyframes fade-in {
@@ -15,39 +14,66 @@ body {
   }
 }
 
+.container{
+  max-width: 1300px;
+  padding: 20px 50px;
+}
+
+.navbar-menu {
+  display: flex; /* Add this line */
+  justify-content: flex-end;
+}
+
+.navbar-menu a{
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Raleway' ,sans-serif;
+  font-weight: 100;
+  padding: 12px 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.navbar-menu a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
 h2 {
-    text-align: center;
-    font-size: 100px;
-    font-family: 'Great Vibes';
-    font-weight: 100;
-    color: #fff;
-    letter-spacing: 2px;
-    line-height: 50px;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 50px;
+  font-family: 'Great Vibes';
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 50px;
 }
 
 .coffee-list {
-    padding: 20px 50px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 20px 50px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .coffee-names {
-    display: inline-block;
-    width: 15vw;
-    height: 45vh;
-    color: #fff;
-    font-family: 'Raleway' ,sans-serif;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 2px solid #ffffff;
-    text-decoration: none;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    box-sizing: border-box;
-    padding: 130px 20px;
-    text-align: center;
-    position: relative;
+  display: inline-block;
+  width: 15vw;
+  height: 45vh;
+  color: #fff;
+  font-family: 'Raleway' ,sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  padding: 130px 20px;
+  text-align: center;
+  position: relative;
 }
 
 .coffee-names:hover {
