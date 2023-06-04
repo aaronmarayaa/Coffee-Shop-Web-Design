@@ -9,6 +9,7 @@ body{
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bg.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   animation: fade-in 1s ease-in-out forwards;
 }
 
@@ -54,6 +55,7 @@ body{
   width: 100%;
   text-align: center;
 }
+
 .description h2{
   font-size: 30px;
   font-family: 'Great Vibes', sans-serif;
