@@ -1,6 +1,8 @@
 body {
   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(coffee.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   animation: fade-in 1s ease-in-out forwards;
 }
@@ -20,7 +22,7 @@ body {
 }
 
 .navbar-menu {
-  display: flex; /* Add this line */
+  display: flex; 
   justify-content: flex-end;
 }
 
@@ -56,6 +58,7 @@ h2 {
   display:flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 59px;
 }
 
 .coffee-names {
@@ -68,14 +71,12 @@ h2 {
   border-radius: 10px;
   border: 2px solid #ffffff;
   text-decoration: none;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   box-sizing: border-box;
   padding: 130px 20px;
   text-align: center;
   position: relative;
 }
-
 .coffee-names:hover {
   transform: scale(1.1);
   background-color: #fff;
